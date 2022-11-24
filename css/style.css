@@ -1,10 +1,16 @@
-.colores {
+.estilosCSS {
     color: #F3505A;
     color: #d43440;
     color: #ECEBEA;
     color: #085979;
     color: #64babe;
     color: #a59f99;
+   /* letras normales
+   Font-family: Copperplate, Copperplate Gothic Light, fantasy.
+   TITULOS:
+   Font-family: Copperplate, Copperplate Gothic Light, fantasy;
+   CSS MENU
+   https://codepen.io/GeoffreyCrofte/pen/ajKVRq*/
 
 }
 
@@ -26,6 +32,17 @@ header {
 
 }
 
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #64babe;
+    text-align: center;
+    justify-content: space-around;
+
+ }
+
 
 .logo {
     width: 30px;
@@ -40,7 +57,30 @@ header {
 .nombreMarca {
     font-size: xx-large;
     font-weight: 600;
+    Font-family: Copperplate, Copperplate Gothic Light, fantasy;
     
 
 }
+/*MENU*/
+            .menu-izq {
+                display: initial;
+            }
+
+            .menu-arriba{
+                display: none;
+            }
+
+            @media only screen and (max-width: 992px) {
+                .menu-izq {
+                display: none;
+                background-color: lightblue;
+                }
+                .menu-arriba {
+                    display: initial;
+                }
+
+                .anclas {
+                    display: initial;
+                }
+            }
 
