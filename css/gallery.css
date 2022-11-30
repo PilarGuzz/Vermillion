@@ -1,0 +1,40 @@
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    grid-auto-rows: auto;
+    
+    
+    
+    
+}
+.card{
+    transition: 0.3s;
+    padding: auto;
+  font-family: sans-serif;
+  margin-bottom: 0.8em;
+  margin-left: 0.8em;
+  margin-right: 0.8em;
+
+
+  
+
+}
+.tituloGaleria{
+    text-align: left;
+    padding-left: 1em;
+}
+
+.texto{
+    padding: 10px;
+}
+.titulo{
+    text-align: center;
+}
+.c1:hover{
+    transform: scale(1.03,1.03);
+    
+}
+.footer{
+    position: relative;
+}
+
