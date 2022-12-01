@@ -33,6 +33,10 @@ header {
     align-items: center;
 
 }
+.breadCrumb{
+    background: #c1dcdd8f;
+
+}
 
 .footer {
     position: fixed;
@@ -52,6 +56,10 @@ header {
     width: 30px;
     height: 30px;
 }
+.logoMenu {
+    width: 100px;
+    height: 100px;
+}
 
 .menu {
     width: 25px;
@@ -61,30 +69,10 @@ header {
 .nombreMarca {
     font-size: xx-large;
     font-weight: 600;
-    font-family: Copperplate, Copperplate Gothic Light, fantasy; 
+
+    Font-family: Copperplate, Copperplate Gothic Light,;
+
     
 
 }
-/*MENU*/
-            .menu-izq {
-                display: initial;
-            }
-
-            .menu-arriba{
-                display: none;
-            }
-
-            @media only screen and (max-width: 992px) {
-                .menu-izq {
-                display: none;
-                background-color: lightblue;
-                }
-                .menu-arriba {
-                    display: initial;
-                }
-
-                .anclas {
-                    display: initial;
-                }
-            }
 
