@@ -14,6 +14,8 @@
   margin-bottom: 0.8em;
   margin-left: 0.8em;
   margin-right: 0.8em;
+    border: 1px solid rgb(0, 0, 0);
+ 
 
 
   
@@ -22,6 +24,10 @@
 .tituloGaleria{
     text-align: left;
     padding-left: 1em;
+    background-color: #a59f99;
+    margin-top: 1em;
+    padding: 1em;
+    color: rgb(255, 255, 255);
 }
 
 .texto{
@@ -36,5 +42,15 @@
 }
 .footer{
     position: relative;
+}
+.separacion{
+    margin: 1em;
+    color: rgb(255, 255, 255);
+    padding-left: 1em;
+}
+.cambio{
+    background-color: #a59f99;
+    margin-bottom: 2em;
+    margin-top: 1em;
 }
 
