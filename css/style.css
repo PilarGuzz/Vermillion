@@ -22,6 +22,8 @@ body {
     background: #ECEBEA;
 }
 
+
+
 header {
     background: #64babe;
     margin: 0;
@@ -47,6 +49,8 @@ header {
 
  }
 
+ 
+
 
 .logo {
     width: 30px;
@@ -65,7 +69,9 @@ header {
 .nombreMarca {
     font-size: xx-large;
     font-weight: 600;
+
     Font-family: Copperplate, Copperplate Gothic Light,;
+
     
 
 }
