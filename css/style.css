@@ -31,6 +31,10 @@ header {
     align-items: center;
 
 }
+.breadCrumb{
+    background: #c1dcdd8f;
+
+}
 
 .footer {
     position: fixed;
