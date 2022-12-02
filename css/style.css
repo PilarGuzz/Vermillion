@@ -29,6 +29,7 @@ header {
     background: #64babe;
     margin: 0;
     width: 100%;
+    height: 8%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -69,8 +70,7 @@ header {
 .nombreMarca {
     font-size: xx-large;
     font-weight: 600;
-
-    Font-family: Copperplate, Copperplate Gothic Light,;
+    Font-family: Copperplate, Copperplate Gothic Light;
 
     
 
@@ -78,8 +78,7 @@ header {
 /* ordenador */
 @media only screen and (min-device-width: 960px){
 
-<<<<<<< Updated upstream
-=======
-}
 
->>>>>>> Stashed changes
+
+
+

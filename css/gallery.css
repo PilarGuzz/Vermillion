@@ -10,23 +10,26 @@
 .card{
     transition: 0.3s;
     padding: auto;
-  font-family: sans-serif;
-  margin-bottom: 0.8em;
-  margin-left: 0.8em;
-  margin-right: 0.8em;
-    border: 1px solid rgb(0, 0, 0);
+    font-family: sans-serif;
+    margin-left: 0.8em;
+    margin-top: 3.5%;
+    margin-right: 0.8em;
+    margin-bottom: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
  
 
 
   
 
 }
+
 .tituloGaleria{
+    
     text-align: left;
-    padding-left: 1em;
-    background-color: #a59f99;
-    margin-top: 1em;
-    padding: 1em;
+    padding-left: 2%;
+    width: 80%;
+    background-color: #d43440;
+    padding: 2%;
     color: rgb(255, 255, 255);
 }
 
@@ -34,7 +37,10 @@
     padding: 10px;
 }
 .titulo{
-    text-align: center;
+    text-align: left;
+    margin-left: 2%;
+    font-style: italic;
+    margin:0;
 }
 .c1:hover{
     transform: scale(1.03,1.03);
@@ -44,13 +50,34 @@
     position: relative;
 }
 .separacion{
-    margin: 1em;
     color: rgb(255, 255, 255);
-    padding-left: 1em;
+    padding: 2%;
+    padding-left: 4%;
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 4%;
+
+    background-color: #d43440;
 }
-.cambio{
-    background-color: #a59f99;
-    margin-bottom: 2em;
-    margin-top: 1em;
+
+.separacion2{
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    padding-left: 4%;
+    width: 80%;
+ 
+    margin-bottom: 4%;
+
+    background-color: #d43440;
 }
+.breadCrumb{
+    margin-top: 1%;
+    
+}
+.migas{
+    font-style: italic;
+    margin: 1.8%;
+}
+
+
 
