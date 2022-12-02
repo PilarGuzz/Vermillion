@@ -1,3 +1,4 @@
+/* movil */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px, 1fr));
@@ -8,13 +9,10 @@
 
 .imagen{
     
-    border: 1px solid rgb(156, 150, 161);
-    box-shadow: 2px 2px 8px 4px #d8cfcfd1;
-    border-radius: 15px;
     font-family: sans-serif;
     height: 250px;
     margin: 5px;
-    
+    padding-block-end:20px;
     
    
 }
@@ -26,7 +24,7 @@
     height: 250px;
     margin: 5px;
     width: 100%;
-    padding-block-end:18em;
+    padding-block-end:55%;
    
     
 }
@@ -55,6 +53,8 @@ img{
     background: rgb(rgb(135, 16, 232),);
     width: 100%;
     height: 100%;
+    font-family: sans-serif;
+    text-justify: auto;
     
    
     }
@@ -68,6 +68,8 @@ img{
     width: 85%;
     text-align: center;
     text-align: justify;
+    font-family: sans-serif;
+    text-justify: auto;
     
 }
 
@@ -84,3 +86,9 @@ img{
     position:relative;
 } 
 
+/* Ordenador */
+
+@media Screen{
+    /* Aquí van todos los estilos CSS */
+    
+  }
