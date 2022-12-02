@@ -19,9 +19,7 @@ body {
 .footer{
   position: relative;
 }
-  *:before, *:after {
-    box-sizing: inherit;
-  } 
+
   
 
 
@@ -37,11 +35,11 @@ body {
     color: white;
   }
   
-  .container {
+  .card-container {
     padding: 0 16px;
   }
   
-  .container::after, .row::after {
+  .card-container::after, .row::after {
     content: "";
     clear: both;
     display: table;
