@@ -7,6 +7,7 @@
     
     
 }
+
 .card{
     transition: 0.3s;
     padding: auto;
@@ -35,6 +36,7 @@
 
 .texto{
     padding: 10px;
+    display: none;
 }
 .titulo{
     text-align: left;
@@ -78,7 +80,7 @@
     font-style: italic;
     margin: 1.8%;
 }
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:400px) {
     .grid-container{
         display: grid;
         grid-template-columns: 2fr 2fr;
@@ -106,8 +108,9 @@
         grid-area: footerdiv;
         
     }
-    footer{
-        position: relative;
+    .footer{
+        position: initial;
+        
     }
     header{
         grid-area: header;
@@ -125,7 +128,7 @@
      
     }
     .card{
-        margin-bottom: 5%;
+        margin-bottom: 12%;
         margin-top: 0;
     }
     .c1{
@@ -156,8 +159,10 @@
     .cortes{
         grid-area: cortes;
         background-color: #d43440;
-        margin-bottom: 0;
+        margin-bottom: 8%;
         height: 60%;
+        width: 80%;
+        text-align: left;
         
     }
     .separacion2{
@@ -166,14 +171,20 @@
     .barbas{
         grid-area: barbas;
         background-color: #d43440;
-        margin-bottom: 0;
+      
         height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
     }
     .permanentes{
         grid-area: permanentes;
         background-color: #d43440;
         margin-bottom: 0;
         height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
     }
    
 }
