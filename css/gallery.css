@@ -7,6 +7,7 @@
     
     
 }
+
 .card{
     transition: 0.3s;
     padding: auto;
@@ -35,6 +36,7 @@
 
 .texto{
     padding: 10px;
+    display: none;
 }
 .titulo{
     text-align: left;
@@ -77,6 +79,114 @@
 .migas{
     font-style: italic;
     margin: 1.8%;
+}
+@media only screen and (min-width:400px) {
+    .grid-container{
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 1.5fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-areas: "    header          header" 
+                    "pre-container pre-container"
+                    "c1                 c2"
+                    "cortes         cortes"
+                    "c3             c4"
+                    "barbas         barbas"
+                    "c5             c6"
+                    "permanentes    permanentes"
+                    "c7             c8" 
+                  "footerdiv        footerdiv";
+                    
+        height: 100vh;
+    
+        
+        
+        
+        
+        
+    }
+    .footerdiv{
+        grid-area: footerdiv;
+        
+    }
+    .footer{
+        position: initial;
+        
+    }
+    header{
+        grid-area: header;
+        height: 10%;
+    }
+    .pre-container{
+        grid-area: pre-container;
+    }
+    .titulo{
+        font-size: xx-large;
+    }
+    .separacion2{
+        margin-left: 4%;
+        background-color: transparent;
+     
+    }
+    .card{
+        margin-bottom: 12%;
+        margin-top: 0;
+    }
+    .c1{
+        grid-area: c1;
+        
+    }
+    .c2{
+        grid-area: c2;
+    }
+    .c3{
+        grid-area: c3;
+    }
+    .c4{
+        grid-area: c4;
+    }
+    .c5{
+        grid-area: c5;
+    }
+    .c6{
+        grid-area: c6;
+    }
+    .c7{
+        grid-area: c7;
+    }
+    .c8{
+        grid-area: c8;
+    }
+    .cortes{
+        grid-area: cortes;
+        background-color: #d43440;
+        margin-bottom: 8%;
+        height: 60%;
+        width: 80%;
+        text-align: left;
+        
+    }
+    .separacion2{
+        padding: 0;
+    }
+    .barbas{
+        grid-area: barbas;
+        background-color: #d43440;
+      
+        height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
+    }
+    .permanentes{
+        grid-area: permanentes;
+        background-color: #d43440;
+        margin-bottom: 0;
+        height: 60%;
+        width: 80%;
+        margin-bottom: 8%;
+
+    }
+   
 }
 
 
