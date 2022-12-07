@@ -19,8 +19,11 @@ body {
     width: 100%;
     height: 100vh;
     margin: 0;
-    background: #ECEBEA;
+    background: #ECEBEA,
+    
 }
+
+
 
 header {
     background: #64babe;
@@ -32,17 +35,22 @@ header {
     align-items: center;
 
 }
+.breadCrumb{
+    background: #c1dcdd8f;
+
+}
 
 .footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
     background: #64babe;
     text-align: center;
     justify-content: space-around;
-
  }
+
+ 
 
 
 .logo {
@@ -63,8 +71,6 @@ header {
     font-size: xx-large;
     font-weight: 600;
     Font-family: Copperplate, Copperplate Gothic Light;
-    
-
 }
 
 
