@@ -8,11 +8,3 @@ burger.addEventListener('click', function(e){
 
 let clickEvent = new Event('click');
 
-window.addEventListener('load', function(e) {
-	burger.dispatchEvent(clickEvent);
-	
-	setTimeout(function(){
-		burger.dispatchEvent(clickEvent);
-		
-	}, 5500);
-});
