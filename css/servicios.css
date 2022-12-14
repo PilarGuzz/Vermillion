@@ -9,6 +9,7 @@
 }
 
 .card{
+    background-color: white;
     transition: 0.3s;
     padding: auto;
     font-family: sans-serif;
@@ -42,13 +43,20 @@
 
 .texto{
     padding: 10px;
-    display: none;
+   
+}
+.precio{
+    padding-left: 10px;
+    padding-bottom: 10px;
+
 }
 .titulo{
     text-align: left;
     margin-left: 2%;
     font-style: italic;
-    margin:0;
+    margin:2%;
+    font-size: medium;
+    font-weight: bolder;
 }
 /* .c1:hover{
     transform: scale(1.03,1.03);
@@ -86,20 +94,18 @@
     font-style: italic;
     margin: 1.8%;
 }
+
 @media only screen and (min-width:450px) {
     .grid-container{
         display: grid;
         grid-template-columns: 2fr 2fr;
-        grid-template-rows: 2fr 1.5fr 3fr 1fr 3fr 1fr 3fr 1fr 3fr 1fr;
+        grid-template-rows: 2fr 1.5fr 3fr 1fr 3fr 1fr ;
         grid-template-areas:  
                     "pre-container pre-container"
                     "c1                 c2"
-                    "cortes         cortes"
-                    "c3             c4"
+                    "c3             c6"
                     "barbas         barbas"
-                    "c5             c6"
-                    "permanentes    permanentes"
-                    "c7             c8" 
+                    "c5             c7"
                   "footerdiv        footerdiv";
                     
         height: 100vh;
@@ -116,9 +122,12 @@
     .cortesybarba{
         display: none;
     }
-    
+    footer{
+        width: 100%;
+    }
     .footerdiv{
         grid-area: footerdiv;
+        width: 100%;
         
     }
     /* .footer{
@@ -133,7 +142,8 @@
         grid-area: pre-container;
     }
     .titulo{
-        font-size: xx-large;
+        font-size: x-large;
+        text-align: center;
     }
     .separacion2{
         margin-left: 4%;
@@ -208,8 +218,7 @@
     }
    
 }
-
-/*----------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------*/
 @media only screen and (min-width:992px) {
     .grid-container{
         display: grid;
@@ -217,9 +226,9 @@
         grid-template-rows: 2fr 0.5fr 3fr 2fr 3fr 1fr;
         grid-template-areas:
                     "pre-container pre-container pre-container pre-container"
-                    "c1  c2  c7  c8"
+                    "c1  c2  c3  c6"
                     "barbas barbas barbas barbas"
-                    "c5  c6  c4 c3"
+                    "c5  c5  c7 c7"
                     "footerdiv footerdiv footerdiv footerdiv";
                     
         height: 100vh;
@@ -245,7 +254,8 @@
         grid-area: pre-container;
     }
     .titulo{
-        font-size: xx-large;
+        font-size: x-large;
+        text-align: center;
     }
     .separacion{
         display: none;
@@ -353,6 +363,3 @@
     }
    
 }
-
-
-
