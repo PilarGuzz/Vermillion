@@ -85,21 +85,27 @@ html {
 }
 
 
-@media screen and (min-width: 450px){
+@media screen and (min-width: 600px){
   .grid-container{
-    padding: 35px;
+    padding: 30px;
   }
-
-
+  .map-responsive {
+    
+    padding-bottom: 40%;
+  }
 }
 
-@media screen and (min-width: 992px){
+  @media screen and (min-width: 992px){
 
 
-  .grid-container{
-    padding: 35px;
-  }
+    .grid-container{
+      padding: 50px;
+    }
+    .map-responsive {
+      
+      padding-bottom: 36%;
+    }
   
 
 
-}
+}    
