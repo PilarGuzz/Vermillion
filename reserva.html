@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reservaStyle.css">
+</head>
+
+
+<body>
+
+    <!-- Encabezado de la pagina. NO TOCAR -->
+    <header>
+        <img class="logo" src="img/logo1.png">
+        <span class="nombreMarca"> Vermillion </span>
+        <img class="menu" src="img/menu.png">
+    </header> 
+
+
+    <!-- Contenedor del contenido real de la pagina (titulos, formulario...)-->
+    <div class="main">
+
+        <h2> Para reservar una cita, rellene el siguiente formulario de debajo: </h2>
+
+        <hr class="primerHr" color="grey" width="70%">
+
+        <!-- Contenedor del formulario -->
+        <div class="formulario">
+
+            <form action="" method="get">
+
+                <div class="titulo-formulario">
+                    <h3> RESERVA </h3>
+                </div>
+
+                    
+                <div class="grupos-input"> 
+
+                    <div class="grupo1">
+
+                        <div class="formulario-grupo">
+                            <label for="nombre"> Nombre </label>
+                            <input required type="text" name="nombre" id="nombre">
+                        </div>
+                
+                        <div class="formulario-grupo">
+                            <label for="apellido1"> Primer apellido </label>
+                            <input required type="text" name="apellido1" id="apellido1">
+                        </div>
+                
+                        <div class="formulario-grupo">
+                            <label for="apellido2"> Segundo apellido </label>
+                            <input required type="text" name="apellido2" id="apellido2">
+                        </div>
+        
+                        <div class="formulario-grupo">
+                            <label for="telefono"> Teléfono </label>
+                            <input required type="tel" name="telefono" id="telefono">
+                        </div>
+
+                    </div>
+                    
+
+                    <div class="grupo2">
+
+                        <div class="formulario-grupo emailInput">
+                            <label for="email"> Email </label>
+                            <input required type="email" name="email" id="email">
+                        </div>
+                
+                        <div class="formulario-grupo fechaInput">
+                            <label for="fecha"> Seleccione la fecha </label>
+                            <input required type="date" name="fecha" id="fecha">
+                        </div>
+                
+                        <div class="formulario-grupo horaInput">
+                            <label for="hora"> Seleccione la hora </label>
+                            <input required type="time" name="hora" id="hora">
+                        </div>
+                
+                        <div class="formulario-submit">
+                            <button class="botonSubmit" type="submit" name="form-submit" id="form-submit"> Enviar </button>
+                        </div>
+
+                    </div>
+                    
+                </form>
+            
+            </div>
+            
+        </div>
+
+    </div>
+
+    <hr class="primerHr" color="grey" width="70%">
+
+
+    <!-- Footer de la pagina -->
+    <footer class="footer">Vermillion Barbershop® 2022</footer>
+
+</body>
+
+</html>
