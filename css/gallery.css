@@ -23,6 +23,16 @@
   
 
 }
+.izq{
+    display: none;
+    
+    
+    
+}
+.imagen{
+    display: none;
+   
+}
 .permanenteyalis{
     display: none;
 }
@@ -185,6 +195,16 @@
         text-align: left;
         
     }
+    .izq{
+        display: none;
+        
+        
+        
+    }
+    .imagen{
+        display: none;
+       
+    }
     .separacion2{
         padding: 0;
     }
@@ -213,14 +233,16 @@
 @media only screen and (min-width:992px) {
     .grid-container{
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        grid-template-rows: 2fr 0.5fr 3fr 2fr 3fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 2fr 0.5fr 3fr 2fr 3fr 3fr 1fr;
         grid-template-areas:
-                    "pre-container pre-container pre-container pre-container"
-                    "c1  c2  c7  c8"
-                    "barbas barbas barbas barbas"
-                    "c5  c6  c4 c3"
-                    "footerdiv footerdiv footerdiv footerdiv";
+                    "pre-container pre-container pre-container pre-container pre-container pre-container"
+                    "c1  c1  c2  c2 izq izq"
+                    "c7  c7  c8  c8 izq izq"
+                    "barbas barbas barbas barbas izq izq"
+                    "c5  c5  c6 c6 izq izq"
+                    "c4 c4 c3 c3 izq izq"
+                    "footerdiv footerdiv footerdiv footerdiv footerdiv footerdiv";
                     
         height: 100vh;
       
@@ -328,6 +350,25 @@
         text-align: left;
         
     }
+    .izq{
+        grid-area: izq;
+        
+        width: 80%;
+        padding-bottom: 200px;
+        padding-left: 20%;
+        display: block;
+        
+        
+        
+    }
+    .imagen{
+        text-align: right;
+        width: 100%;
+        height: 90%;
+        display: block;
+       
+    }
+
     .separacion2{
         padding: 0;
         display: none;

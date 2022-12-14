@@ -71,10 +71,14 @@
 .formulario-submit .botonSubmit:hover {
     box-shadow: 0 0 20px #64babe;
 }
+.footer{
+    position: relative;
+    color: black;
+}
 
 
 
-/* ====== AQUÍ EMPIEZA @media PARA MONITORES ====== */
+/* ====== AQUÍ EMPIEZA @media PARA TABLETS ====== */
 @media screen and (min-width: 600px) {
 
     hr .primerHr {
@@ -89,7 +93,7 @@
     .grupos-input {
         display: grid;
         grid-template-columns: 1fr 1fr;font-size: 18px;
-        font-weight: 500;
+        font-weight: 70%;
         grid-template-rows: 1fr;
         grid-template-areas: 
         "grupo1 grupo2";
@@ -131,6 +135,94 @@
     }
 
 
+    .titulo-formulario {
+        padding: 3px;
+        font-size: 18px;
+    }
+
+    input{
+        width: 70%;
+    }
+
+    .formulario-submit .botonSubmit {
+        padding: 5px;
+        position: relative;
+        top: 16px;
+    } 
+
+
+    .emailInput input, .emailInput label {
+        position: relative;
+        top: -1px;
+    }
+    
+    
+    .fechaInput input, .fechaInput label {
+        position: relative;
+        top: -1px;
+    }
+}
+
+/*PARA MONITORES*/
+@media screen and (min-width: 992px) {
+
+    hr .primerHr {
+        width: 20%;
+    }
+
+    hr .segundoHr {
+        width: 40%;
+    }
+
+    label{
+        text-align: left;
+    }
+
+    .grupos-input {
+        display: grid;
+        grid-template-columns: 1fr 1fr;font-size: 18px;
+        font-weight: 70%;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "grupo1 grupo2";
+    }
+
+
+    .grupo1 {
+        display: grid;
+        grid-area: grupo1;
+    }
+
+
+    .grupo2 {
+        display: grid;
+        grid-area: grupo2;
+    }
+
+
+    .grupo1, .grupo2 {
+        margin-bottom: 20px;
+    }
+
+
+    .emailInput {
+        position: relative;
+        top: 2px;
+    }
+
+
+    .fechaInput {
+        position: relative;
+        top: 3px;
+    }
+
+
+    .horaInput {
+        position: relative;
+        top: 3px;
+    }
+
+    
     .titulo-formulario {
         padding: 3px;
         font-size: 18px;

@@ -8,6 +8,7 @@
     
 }
 
+
 .card{
     background-color: white;
     transition: 0.3s;
@@ -23,6 +24,22 @@
 
   
 
+}
+.izq{
+    grid-area: izq;
+    float: right;
+    width: 80%;
+    padding-left: 20%;
+    display: none;
+    
+    
+    
+}
+.imagen{
+    text-align: right;
+    width: 100%;
+    height: 100%;
+    display: none;
 }
 .permanenteyalis{
     display: none;
@@ -42,16 +59,18 @@
 }
 
 .texto{
-    padding: 10px;
+    padding: 5px;
    
 }
 .precio{
     padding-left: 10px;
     padding-bottom: 10px;
+    margin: 0;
 
 }
 .titulo{
-    text-align: left;
+    padding: 15px;
+    text-align: center;
     margin-left: 2%;
     font-style: italic;
     margin:2%;
@@ -216,20 +235,37 @@
         margin-bottom: 8%;
 
     }
+    .izq{
+        grid-area: izq;
+        float: right;
+        width: 80%;
+        padding-left: 20%;
+        display: none;
+        
+        
+        
+    }
+    .imagen{
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
    
 }
 /*---------------------------------------------------------*/
 @media only screen and (min-width:992px) {
     .grid-container{
         display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        grid-template-rows: 2fr 0.5fr 3fr 2fr 3fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 2fr 0.5fr 3fr 3fr 2fr 3fr 1fr;
         grid-template-areas:
-                    "pre-container pre-container pre-container pre-container"
-                    "c1  c2  c3  c6"
-                    "barbas barbas barbas barbas"
-                    "c5  c5  c7 c7"
-                    "footerdiv footerdiv footerdiv footerdiv";
+                    "pre-container pre-container pre-container pre-container pre-container pre-container"
+                    "c1  c1  c2  c2 izq izq"
+                    "c3  c3  c6  c6 izq izq"
+                    "barbas barbas barbas barbas barbas barbas"
+                    "c5  c5  c5 c7 c7 c7"
+                    "footerdiv footerdiv footerdiv footerdiv footerdiv footerdiv" ;
                     
         height: 100vh;
       
@@ -240,7 +276,23 @@
         margin-bottom: 1%;
     }
 
-    
+    .izq{
+        grid-area: izq;
+        float: right;
+        width: 80%;
+        padding-left: 20%;
+        display: block;
+        
+        
+        
+    }
+    .imagen{
+        text-align: right;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
     
     /* .footerdiv{
         grid-area: footerdiv;

@@ -117,7 +117,7 @@
 	width: 28px;
 	height: 4px;
 	margin: 0 auto;
-	margin-top: 25%;
+	margin-top: 0%;
 	background: black;
 	transform: skew(5deg);
 	transition: all .275s;
@@ -199,9 +199,9 @@ body {
 	justify-content: center;
 	align-items: center;
 }
-
+/*
 @media only screen and (min-width:900px) {
 	.burger{
 		display: none;
 	}
-}
+}*/
