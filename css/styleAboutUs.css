@@ -6,15 +6,43 @@ body {
 html {
   box-sizing: border-box;
 }
-
-.grid-container {
+.grid-container{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: auto;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "cardDani"
+  "cardSergio"
+  "cardPilar"
+  "cardJavi"
+  "cardVicen"
 
+}
 
+.cardDani{
+  display: grid;
+  grid-area: cardDani;
+}
+.cardSergio{
+  display: grid;
+  grid-area: cardSergio;
+}
+.cardPilar{
+  display: grid;
+  grid-area: cardPilar;
+}
+.cardJavi{
+  display: grid;
+  grid-area: cardJavi;
+}
+.cardVicen{
+  display: grid;
+  grid-area: cardVicen;
+}
 
-
+.card img{
+  height: 450px;
+  
 }
 
 .footer {
@@ -43,12 +71,7 @@ html {
   padding: 0 16px;
 }
 
-.card-container::after,
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 
 .title {
   color: grey;
@@ -89,7 +112,21 @@ html {
 
 .card img{
   object-fit: cover;
-  height: 47%;
+  height: 300px;
+}
+
+@media screen and (min-width: 450px){
+  .grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "cardDani  cardDani    cardSergio cardSergio "
+    "cardPilar cardPilar cardJavi cardJavi"
+    ". cardVicen cardVicen ."
+
+}
+
 }
 
 @media screen and (min-width: 992px){
@@ -103,32 +140,12 @@ html {
       "cardPilar cardPilar cardJavi cardJavi cardVicen cardVicen"
 
   }
-
-  .cardDani{
-    display: grid;
-    grid-area: cardDani;
-  }
-  .cardSergio{
-    display: grid;
-    grid-area: cardSergio;
-  }
-  .cardPilar{
-    display: grid;
-    grid-area: cardPilar;
-  }
-  .cardJavi{
-    display: grid;
-    grid-area: cardJavi;
-  }
-  .cardVicen{
-    display: grid;
-    grid-area: cardVicen;
-  }
-  
   .card img{
     height: 450px;
     
   }
+
+  
 
 
 }
