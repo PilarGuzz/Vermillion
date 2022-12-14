@@ -6,6 +6,12 @@
     margin-right: 20px;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #F3505A;
+    color: white;
+  }
 
 
 .main, .botonSubmit {
@@ -161,6 +167,9 @@
         position: relative;
         top: -1px;
     }
+    .footer{
+        position: fixed;
+    }
 }
 
 /*PARA MONITORES*/
@@ -246,5 +255,6 @@
         position: relative;
         top: -1px;
     }
+    
 }
 
