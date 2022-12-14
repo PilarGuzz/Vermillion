@@ -30,7 +30,66 @@ html {
   color: white;
 }
 
+/*MENU WEB*/
+.menuWeb{
+  display: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "homenav servnav galnav resnav locnav contnav abnav"
+}
+.homenav{
+  display: grid;
+  grid-area: homenav;
+}
+.servnav{
+  display: grid;
+  grid-area: servnav;
+}
+.galnav{
+  display: grid;
+  grid-area: galnav;
+}
+.galnav{
+  display: grid;
+  grid-area: galnav;
+}
+.resnav{
+  display: grid;
+  grid-area: resnav;
+}
+.locnav{
+  display: grid;
+  grid-area: locnav;
+}
+.contnav{
+  display: grid;
+  grid-area: contnav;
+}
+.abnav{
+  display: grid;
+  grid-area: abnav;
+}
+.menuWeb a{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+  } 
+  .menuWeb div{
+  display:inline-block;
+  padding:5px 10px;
+  background-color:#000;
+  border:1px solid #000;
+  text-align:center;
+  color:#fff;
+  }
+  .menuWeb div:hover{
+  background-color:#ffffff;
+  color:#000;
+  }
 
+/*FIN MENU WEB*/
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -83,6 +142,11 @@ html {
   position: absolute;
 
 }
+/*MENU WEB*/
+.menuWeb{
+  display: none;
+}
+/*FIN MENU WEB*/
 
 
 @media screen and (min-width: 600px){
@@ -96,6 +160,66 @@ html {
 }
 
   @media screen and (min-width: 992px){
+    
+/*MENU WEB*/
+.menuWeb{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  "homenav servnav galnav resnav locnav contnav abnav"
+}
+.homenav{
+  display: grid;
+  grid-area: homenav;
+}
+.servnav{
+  display: grid;
+  grid-area: servnav;
+}
+.galnav{
+  display: grid;
+  grid-area: galnav;
+}
+.galnav{
+  display: grid;
+  grid-area: galnav;
+}
+.resnav{
+  display: grid;
+  grid-area: resnav;
+}
+.locnav{
+  display: grid;
+  grid-area: locnav;
+}
+.contnav{
+  display: grid;
+  grid-area: contnav;
+}
+.abnav{
+  display: grid;
+  grid-area: abnav;
+}
+.menuWeb a{
+  text-decoration:none;
+  color:inherit;
+  font-size:14px;
+  } 
+  .menuWeb div{
+  display:inline-block;
+  padding:5px 10px;
+  background-color:#000;
+  border:1px solid #000;
+  text-align:center;
+  color:#fff;
+  }
+  .menuWeb div:hover{
+  background-color:#ffffff;
+  color:#000;
+  }
+
+/*FIN MENU WEB*/
 
 
     .grid-container{
