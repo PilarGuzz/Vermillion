@@ -33,6 +33,12 @@ header {
 .breadCrumb {
   background: #c1dcdd8f;
 }
+.about-section {
+  padding: 10px;
+  text-align: center;
+  background-color: #F3505A;
+  color: white;
+}
 
 .footer {
   position: relative;
