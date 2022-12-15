@@ -137,7 +137,17 @@ header {
     color: inherit;
     font-size: 14px;
   }
-  .menuWeb div {
+  .menuWeb a.activated{
+    background-color: #ffffff;
+    border: solid #ffffff;
+    color: #000;
+  }
+  .menuWeb a.activated:hover{
+    background-color: #000;
+    border: solid #000;
+    color: #ffffff;
+  }
+  .menuWeb a {
     display: inline-block;
     padding: 5px 10px;
     background-color: #000;
@@ -145,10 +155,11 @@ header {
     text-align: center;
     color: #fff;
   }
-  .menuWeb div:hover {
+  .menuWeb a:hover {
     background-color: #ffffff;
     color: #000;
   }
+
 
   /*FIN MENU WEB*/
 }

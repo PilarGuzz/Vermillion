@@ -2,9 +2,9 @@ body{
     overflow: hidden;
 }
 .home-container{
-    overflow-y: hidden;
     padding: 2%;
     align-items: center;
+
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 0.5fr 0.5fr;
@@ -31,9 +31,6 @@ body{
 .footer{
     position: fixed;
 }
-.buttonDiv{
-    grid-area: buttonDiv;
-}
 .button {
     background-color: #f44336;
     color: white; 
@@ -44,4 +41,26 @@ body{
 
 hr{
     width: 95%;
+}
+.about-section {
+    padding: 10px;
+    text-align: center;
+    background-color: #F3505A;
+    color: white;
+}
+
+@media only screen and (min-width:450px) {
+
+    hr{
+        display: none;
+    }
+    .home-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+        grid-template-areas:  
+                    "textoPrincipal imagen"
+                    "aboutUs aboutUs";
+                    
+    }
 }
