@@ -47,85 +47,189 @@
           </div>
 
 
-        <hr class="primerHr" color="grey" width="70%">
-
         <!-- Contenedor del formulario -->
         <div class="formulario">
+
             <fieldset>
                 
+                <form action="" method="get">
+
+                    <div class="titulo-formulario">
+                        <h3> CITA </h3>
+                    </div>
+
+                        
+                    <div class="grupos-input"> 
+
+                        <div class="grupo1">
+
+                          <div class="grupo1Div1">
+
+                            <div class="formulario-grupo">
+
+                              <div class="labelDiv">
+                                <label for="nombre"> Nombre: </label>
+                              </div>
+                              
+                              <div class="inputDiv">
+                                <input placeholder="Nombre" required type="text" name="nombre" id="nombre">
+                              </div>
+                                    
+                            </div>
+                            
+                          </div>                    
+
+                            <div class="grupo1Div2">
+
+                              <div class="formulario-grupo">
+
+                                <div class="labelDiv">
+                                  <label for="apellido1"> Primer apellido: </label>
+                                </div>
+                                
+                                <div class="inputDiv">
+                                  <input placeholder="Primer apellido"required type="text" name="apellido1" id="apellido1">
+                                </div>
+                                  
+                              </div>
+                            
+                            </div>
+
+                            
+                            <div class="grupo1Div3">
+
+                              <div class="formulario-grupo">
+                                  
+                                <div class="labelDiv">
+                                  <label for="apellido2"> Segundo apellido: </label>
+                                </div>
+                                
+                                <div class="inputDiv">
+                                  <input placeholder="Segundo apellido" required type="text" name="apellido2" id="apellido2">
+                                </div>
+                                
+                              </div>
+                            
+                            </div>
             
-            <form action="" method="get">
+                            
+                            <div class="grupo1Div4">
 
-                <div class="titulo-formulario">
-                    <h3> CITA </h3>
-                </div>
+                              <div class="formulario-grupo">
+                                
+                                <div class="labelDiv">
+                                  <label for="telefono"> Teléfono: </label>
+                                </div>
+                                
+                                <div class="inputDiv">
+                                  <input placeholder="Teléfono" required type="tel" name="telefono" id="telefono">
+                                </div>
+                                
+                              </div>
 
+                            </div>
+
+                        </div>
+                        
+
+                        <div class="grupo2">
+
+                          <div class="grupo2Div1">
+                              
+                            <div class="formulario-grupo emailInput">
+
+                              <div class="labelDiv">
+                                <label for="email"> Email: </label>
+                              </div>
+
+                              <div class="inputDiv">
+                                <input placeholder="Email" required type="email" name="email" id="email">
+                              </div>
+                                    
+                            </div>
+
+                          </div>
+
+                            
                     
-                <div class="grupos-input"> 
+                          <div class="grupo2Div2">
 
-                    <div class="grupo1">
+                            <div class="formulario-grupo fechaInput">
 
-                        <div class="formulario-grupo">
-                            <label for="nombre"> Nombre </label>
-                            <input required type="text" name="nombre" id="nombre">
-                        </div>
-                
-                        <div class="formulario-grupo">
-                            <label for="apellido1"> Primer apellido </label>
-                            <input required type="text" name="apellido1" id="apellido1">
-                        </div>
-                
-                        <div class="formulario-grupo">
-                            <label for="apellido2"> Segundo apellido </label>
-                            <input required type="text" name="apellido2" id="apellido2">
-                        </div>
-        
-                        <div class="formulario-grupo">
-                            <label for="telefono"> Teléfono </label>
-                            <input required type="tel" name="telefono" id="telefono">
-                        </div>
+                              <div class="labelDiv">
+                                <label for="fecha"> Seleccione la fecha: </label>
+                              </div>
+
+                              <div class="inputDiv">
+                                <input required type="date" name="fecha" id="fecha">
+                              </div>
+                                
+                            </div>
+
+                          </div>
+                            
+                    
+                          <div class="grupo2Div3">
+
+                            <div class="formulario-grupo horaInput">
+                                
+                              <div class="labelDiv">
+                                <label for="hora"> Seleccione la hora: </label>
+                              </div>
+                                    
+                              <div class="inputDiv">
+                                <input required type="time" name="hora" id="hora">
+                              </div>
+                                
+                            </div>
+                               
+                          </div>
+
+
+                          <div class="grupo2Div4">
+
+                            
+                          </div>
 
                     </div>
+
+
+                    <div class="formulario-grupo mensajeInput">
+                         
+                      <div class="labelDiv">
+                        <label for="mensaje"> Mensaje: </label>
+                      </div>
+                    
+                      <div class="inputDiv">
+                        <textarea rows="4" placeholder="Escribe aquí lo que necesite..."></textarea>
+                      </div>
+                    </div>
+
                     
 
-                    <div class="grupo2">
+                      
+                      
+                    
+                  </div>
 
-                        <div class="formulario-grupo emailInput">
-                            <label for="email"> Email </label>
-                            <input required type="email" name="email" id="email">
-                        </div>
-                        <div class="formulario-grupo emailInput">
-                            <label for="email"> Mensaje: </label>
-                            <textarea placeholder="Escribe aquí lo que necesite..."></textarea>
-                        </div>
-                
-                        <div class="formulario-grupo fechaInput">
-                            <label for="fecha"> Seleccione la fecha </label>
-                            <input required type="date" name="fecha" id="fecha">
-                        </div>
-                
-                        <div class="formulario-grupo horaInput">
-                            <label for="hora"> Seleccione la hora </label>
-                            <input required type="time" name="hora" id="hora">
-                        </div>
-                
-                        <div class="formulario-submit">
-                            <button class="botonSubmit" type="submit" name="form-submit" id="form-submit"> Enviar </button>
-                        </div>
-
+                    <div class="formulario-submit">
+                        <button class="botonSubmit" type="submit" name="form-submit" id="form-submit"> Enviar </button>
                     </div>
                     
                 </form>
+
             </fieldset>
             
             </div>
             
         </div>
+
         <div class="footerdiv">
             <!-- Footer de la pagina -->
             <footer class="footer">Vermillion Barbershop® 2022</footer>
 
         </div>
+
         <!--BOTON Y MENU COMPLETO-->
 		<button id="burger" class="open-main-nav">
 			<span class="burger"></span>

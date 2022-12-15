@@ -6,6 +6,7 @@
     margin-right: 20px;
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
 }
+
 .about-section {
     padding: 10px;
     text-align: center;
@@ -73,48 +74,177 @@
     top: 5px;
 } 
 
+input, button {
+    margin-bottom: 20px;
+    padding: 8px;
+}
+
+textarea {
+    margin-bottom: 15px;
+    resize: none;
+}
 
 .formulario-submit .botonSubmit:hover {
     box-shadow: 0 0 20px #64babe;
 }
+
+
+label {
+    display: none;
+}
+
+
 .footer{
     position: relative;
     color: black;
 }
 
 
+.inputDiv {
+    display: grid;
+}
+
+
+.mensajeInput {
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 
 /* ====== AQUÍ EMPIEZA @media PARA TABLETS ====== */
 @media screen and (min-width: 600px) {
 
-    hr .primerHr {
-        width: 20%;
-    }
-
-    hr .segundoHr {
-        width: 40%;
-    }
-
-
     .grupos-input {
         display: grid;
-        grid-template-columns: 1fr 1fr;font-size: 18px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 18px;
         font-weight: 70%;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 0.1fr;
         grid-template-areas: 
-        "grupo1 grupo2";
+        "grupo1 grupo2"
+        "mensajeInput mensajeInput"
+        "formularioSubmit formularioSubmit";
+    }
+
+
+    .mensajeInput {
+        display: grid;
+        grid-area: mensajeInput;
+    }
+
+    
+
+    .formulario-submit {
+        display: grid;
+        grid-area: formularioSubmit;
     }
 
 
     .grupo1 {
         display: grid;
         grid-area: grupo1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo1Div1"
+        "grupo1Div2"
+        "grupo1Div3"
+        "grupo1Div4";
+    }
+
+
+    .grupo1 input, .grupo2 input {
+        padding: 10px;
+    }
+
+    .grupo2 .horaInput input {
+        padding: 7px;
+    }
+
+
+    .grupo1Div1 {
+        display: grid;
+        grid-area: grupo1Div1;
+    }
+
+    .grupo1Div2 {
+        display: grid;
+        grid-area: grupo1Div2;
+    }
+
+    .grupo1Div3 {
+        display: grid;
+        grid-area: grupo1Div3;
+    }
+
+    .grupo1Div4 {
+        display: grid;
+        grid-area: grupo1Div4;
+    }
+
+
+    .formulario-grupo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:  
+        "labelDiv"
+        "inputDiv";
+    }
+
+    
+    .labelDiv, .inputDiv {
+        align-self: center;
+    }
+
+
+    .labelDiv {
+        display: grid;
+        font-size: 18px;
+        grid-area: labelDiv;
+    }
+
+
+    .inputDiv {
+        display: grid;
+        grid-area: inputDiv;
     }
 
 
     .grupo2 {
         display: grid;
         grid-area: grupo2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo2Div1"
+        "grupo2Div2"
+        "grupo2Div3"
+        "grupo2Div4";
+    }
+
+
+    .grupo2Div1 {
+        display: grid;
+        grid-area: grupo2Div1;
+    }
+
+    .grupo2Div2 {
+        display: grid;
+        grid-area: grupo2Div2;
+    }
+
+    .grupo2Div3 {
+        display: grid;
+        grid-area: grupo2Div3;
+    }
+
+
+    .grupo2Div4 {
+        display: grid;
+        grid-area: grupo2Div4;
     }
 
 
@@ -146,12 +276,14 @@
         font-size: 18px;
     }
 
-    input{
+
+    input {
         width: 70%;
     }
 
+
     .formulario-submit .botonSubmit {
-        padding: 5px;
+        padding: 8px;
         position: relative;
         top: 16px;
     } 
@@ -167,45 +299,175 @@
         position: relative;
         top: -1px;
     }
+
+
+    input, button {
+        padding: 8px;
+    }
+
+
+    label {
+        display: initial;
+    }
+
+
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
+    }
+
+
+    .horaInput input {
+        padding: -5px;
+    }
+
+
     .footer{
         position: fixed;
     }
+
+
+    .mensajeInput {
+        margin: collapse;
+    }
+
 }
+
 
 /*PARA MONITORES*/
 @media screen and (min-width: 992px) {
 
-    hr .primerHr {
-        width: 20%;
-    }
-
-    hr .segundoHr {
-        width: 40%;
-    }
-
-    label{
-        text-align: left;
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
     }
 
     .grupos-input {
         display: grid;
-        grid-template-columns: 1fr 1fr;font-size: 18px;
+        grid-template-columns: 1fr 1fr;
+        font-size: 18px;
         font-weight: 70%;
-        grid-template-rows: 1fr;
+        grid-template-rows: 1fr 0.1fr;
         grid-template-areas: 
-        "grupo1 grupo2";
+        "grupo1 grupo2"
+        "mensajeInput mensajeInput"
+        "formularioSubmit formularioSubmit";
+    }
+
+
+    .mensajeInput {
+        display: grid;
+        grid-area: mensajeInput;
+    }
+
+    
+
+    .formulario-submit {
+        display: grid;
+        grid-area: formularioSubmit;
     }
 
 
     .grupo1 {
         display: grid;
         grid-area: grupo1;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo1Div1"
+        "grupo1Div2"
+        "grupo1Div3"
+        "grupo1Div4";
+    }
+
+
+    .grupo1 input, .grupo2 input {
+        padding: 10px;
+    }
+
+    .grupo2 .horaInput input {
+        padding: 7px;
+    }
+
+
+    .grupo1Div1 {
+        display: grid;
+        grid-area: grupo1Div1;
+    }
+
+    .grupo1Div2 {
+        display: grid;
+        grid-area: grupo1Div2;
+    }
+
+    .grupo1Div3 {
+        display: grid;
+        grid-area: grupo1Div3;
+    }
+
+    .grupo1Div4 {
+        display: grid;
+        grid-area: grupo1Div4;
+    }
+
+
+    .formulario-grupo {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:  
+        "labelDiv inputDiv";
+    }
+
+    
+    .labelDiv, .inputDiv {
+        align-self: center;
+    }
+
+
+    .labelDiv {
+        display: grid;
+        font-size: 18px;
+        grid-area: labelDiv;
+    }
+
+
+    .inputDiv {
+        display: grid;
+        grid-area: inputDiv;
     }
 
 
     .grupo2 {
         display: grid;
         grid-area: grupo2;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas:  
+        "grupo2Div1"
+        "grupo2Div2"
+        "grupo2Div3"
+        "grupo2Div4";
+    }
+
+
+    .grupo2Div1 {
+        display: grid;
+        grid-area: grupo2Div1;
+    }
+
+    .grupo2Div2 {
+        display: grid;
+        grid-area: grupo2Div2;
+    }
+
+    .grupo2Div3 {
+        display: grid;
+        grid-area: grupo2Div3;
+    }
+
+
+    .grupo2Div4 {
+        display: grid;
+        grid-area: grupo2Div4;
     }
 
 
@@ -231,15 +493,20 @@
         top: 3px;
     }
 
-    
+
     .titulo-formulario {
         padding: 3px;
         font-size: 18px;
     }
 
 
+    input {
+        width: 70%;
+    }
+
+
     .formulario-submit .botonSubmit {
-        padding: 5px;
+        padding: 8px;
         position: relative;
         top: 16px;
     } 
@@ -255,6 +522,32 @@
         position: relative;
         top: -1px;
     }
-    
+
+
+    input, button {
+        padding: 8px;
+    }
+
+
+    label {
+        display: initial;
+    }
+
+
+    input::placeholder, textarea::placeholder {
+        opacity: 0;
+    }
+
+
+    .horaInput input {
+        padding: -5px;
+    }
+
+
+    .footer{
+        position: fixed;
+    }
+
+
 }
 
