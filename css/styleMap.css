@@ -141,23 +141,7 @@ html {
   display: grid;
   grid-area: abnav;
 }
-.menuWeb a{
-  text-decoration:none;
-  color:inherit;
-  font-size:14px;
-  } 
-  .menuWeb div{
-  display:inline-block;
-  padding:5px 10px;
-  background-color:#000;
-  border:1px solid #000;
-  text-align:center;
-  color:#fff;
-  }
-  .menuWeb div:hover{
-  background-color:#ffffff;
-  color:#000;
-  }
+ 
 
 /*FIN MENU WEB*/
 
