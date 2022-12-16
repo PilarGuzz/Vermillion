@@ -29,7 +29,7 @@ body {
 
 .card{
   transition: 0.3s;
-  padding: auto;
+  padding: 10px;
   font-family: sans-serif;
   margin-left: 0.8em;
   margin-top: 5.5%;
